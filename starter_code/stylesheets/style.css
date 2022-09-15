@@ -5,3 +5,309 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(201, 196, 189, 0.5);
+    background-color: white;
+    position: fixed;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 10px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    padding: 30px 50px;
+}
+
+header h1 {
+    color: #2C303F;
+    margin-bottom: 0;
+    font-size: 74px;
+}
+
+header p {
+    font-size: 30px;
+}
+
+header img {
+    width: 600px;
+}
+
+button {
+    color: white;
+    background-color: #192592;
+    border-radius: 5px;
+    padding: 23px;
+    font-size: 15px;
+    width: 650px;
+}
+
+.companies button {
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    padding: 20px;
+    width: 650px;
+}
+
+
+.companies {
+    background-color: #F4F3F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+   
+}
+
+
+.companies h2 {
+    font-size: 60px;
+    color: #2C303F;
+    margin-bottom: 0;
+}
+
+.companies p {
+    font-size: 35px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.companies img {
+    width: 200px;
+    border-bottom: 1px solid rgba(201, 196, 189, 0.5);
+    padding: 30px 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ticketLogo {
+    border-bottom: none;
+}
+
+p {
+    color: #5b5e6d;
+    font-family: sans-serif;
+}
+
+.usandoSlack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(201, 196, 189, 0.5);
+    padding-bottom: 50px;
+}
+
+.usandoSlack p {
+    font-size: 25px;
+}
+
+#forFree {
+    font-size: 40px;
+    font-family: serif;
+    color: #2C303F;
+    margin-bottom: 0;
+}
+
+  .subFooter {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+
+/* .subFooter {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+} */
+.subFooter img {
+    width: 200px;
+    height: 200px;
+}
+
+.subFooter li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: sans-serif;
+    color: #5b5e6d;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+.piePagina {
+    background-color: #F4F3F4;
+    height: 150px;
+    color: #5b5e6d;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.piePagina ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.piePagina img {
+    width: 30px;
+}
+
+ /* Web responsive   */
+
+@media (max-width: 767px) {
+    body {
+        width: 100vw;
+    }
+
+    nav {
+        height: 50px;
+        width: 767px;
+    }
+
+    nav ul {
+        display: inline;
+        text-align: center;
+        margin: 0 10px 0 0;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        order: 5;
+    }
+
+
+    .subFooter ul {
+        width: 40vw;
+    }
+    
+    .subFooter img {
+    margin-right: 400px;
+    }
+
+   
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+    body {
+        width: 100vw;
+    }
+
+    nav {
+        height: 50px;
+        width: 961px;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        order: 5;
+    }
+
+    .subFooter{
+        width: 100vw;
+    }
+    
+    .subFooter ul {
+        width: 10vw;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+       
+}
+
+@media (min-width: 962px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+    }
+
+    nav {
+        height: 50px;
+        width: 100vw;
+    }
+
+   header {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   header img {
+       order: 5;}
+
+
+.subFooter ul {
+        width: 15vw;
+    }
+
+    .companies {
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    
+nav {
+        height: 50px;
+        width: 100vw;
+    }
+
+    body {
+        width: 100vw;
+    }
+    
+    .companies {
+        width: 100vw;
+     } 
+     /* .subFooter {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+     }     */
+    
+         .subFooter ul {
+             width: 9vw;
+         }
+}
